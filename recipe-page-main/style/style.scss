@@ -25,26 +25,40 @@ body {
     height: 100%;
     background-color: var(--Stone-100);
     main {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        margin: 10% 10%;
+        margin: 5% 10%;
         border-radius: 20px;
         background-color: var(--White);
         .img {
-            margin: 50px 0;
-
+            padding-top: 50px;
+            margin: 60px auto;
             img {
-                width: 100%;
+                display: block;
+                width: 95%;
+
+                margin: 0 auto;
                 border-radius: 20px;
             }
         } //img
         .text {
             .box {
+                width: 100%;
+                margin: 30px 0;
+                padding: 0 3%;
                 font-size: 19px;
                 ul,
                 ol {
                     list-style-position: inside;
+                    padding-top: 10px;
+                    padding-left: 20px;
+                    li {
+                        padding: 7px 2%;
+                    }
+                }
+                h2 {
+                    color: var(--Brown-800);
+                }
+                span {
+                    font-weight: bold;
                 }
             } //box
             .box01 {
@@ -52,15 +66,145 @@ body {
                     font-size: 50px;
                 }
                 p {
-                    margin: 10px 0;
+                    margin: 20px 0;
                     font-size: 19px;
                 }
             } //box01
             .box02 {
+                margin: 5% 5%;
                 h3 {
                     color: var(--Rose-800);
                 }
             } //box02
+            .box03 {
+                border-bottom: 1px solid var(--Stone-150);
+                ul {
+                    margin-bottom: 30px;
+                }
+            } //box03
+            .box04 {
+                border-bottom: 1px solid var(--Stone-150);
+           
+                ol {
+                    margin-bottom: 30px;
+                }
+            } //box04
+            .box05 {
+                > p {
+                    margin: 10px 0;
+                }
+                .nutrition {
+                    p {
+                        display: flex;
+                        padding: 20px;
+                        width: 100%;
+                        border-bottom: 1px solid black;
+                        span {
+                            display: inline-block;
+                            width: 100%;
+                            justify-content: space-around;
+                        }
+                    }
+                    p:last-child {
+                        border-bottom: none;
+                    }
+                }
+            } //box05
         } //text
     } //main
 } //body
+
+@media (max-width: 1100px) {
+    body {
+        width: 100%;
+        height: 100%;
+        background-color: var(--White);
+        main {
+            margin: 0;
+            border-radius: 0px;
+            background-color: var(--White);
+            .img {
+                padding-top: 0px;
+                margin: 0px;
+                img {
+                    display: block;
+                    width: 100%;
+
+                    margin: 0 auto;
+                    border-radius: 0px;
+                }
+            } //img
+            .text {
+                .box {
+                    width: 100%;
+                    margin: 30px 0;
+                    padding: 0 3%;
+                    font-size: 19px;
+                    ul,
+                    ol {
+                        list-style-position: inside;
+                        padding-top: 10px;
+                        padding-left: 10px;
+                        li {
+                            padding: 7px 0;
+                        }
+                    }
+                    h2 {
+                        color: var(--Brown-800);
+                    }
+                    span {
+                        font-weight: bold;
+                    }
+                } //box
+                .box01 {
+                    h1 {
+                        font-size: 50px;
+                    }
+                    p {
+                        margin: 20px 0;
+                        font-size: 19px;
+                    }
+                } //box01
+                .box02 {
+                    margin: 5% 0;
+                    h3 {
+                        color: var(--Rose-800);
+                    }
+                } //box02
+                .box03 {
+                    border-bottom: 1px solid black;
+                    ul {
+                        margin-bottom: 30px;
+                    }
+                } //box03
+                .box04 {
+                    border-bottom: 1px solid black;
+                    ol {
+                        margin-bottom: 30px;
+                    }
+                } //box04
+                .box05 {
+                    > p {
+                        margin: 10px 0;
+                    }
+                    .nutrition {
+                        p {
+                            display: flex;
+                            padding: 20px;
+                            width: 100%;
+                            border-bottom: 1px solid black;
+                            span {
+                                display: inline-block;
+                                width: 100%;
+                                justify-content: space-around;
+                            }
+                        }
+                        p:last-child {
+                            border-bottom: none;
+                        }
+                    }
+                } //box05
+            } //text
+        } //main
+    } //body
+}

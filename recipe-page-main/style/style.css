@@ -23,34 +23,168 @@ body {
   background-color: var(--Stone-100);
 }
 body main {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin: 10% 10%;
+  margin: 5% 10%;
   border-radius: 20px;
   background-color: var(--White);
 }
 body main .img {
-  margin: 50px 0;
+  padding-top: 50px;
+  margin: 60px auto;
 }
 body main .img img {
-  width: 100%;
+  display: block;
+  width: 95%;
+  margin: 0 auto;
   border-radius: 20px;
 }
 body main .text .box {
+  width: 100%;
+  margin: 30px 0;
+  padding: 0 3%;
   font-size: 19px;
 }
 body main .text .box ul,
 body main .text .box ol {
   list-style-position: inside;
+  padding-top: 10px;
+  padding-left: 20px;
+}
+body main .text .box ul li,
+body main .text .box ol li {
+  padding: 7px 2%;
+}
+body main .text .box h2 {
+  color: var(--Brown-800);
+}
+body main .text .box span {
+  font-weight: bold;
 }
 body main .text .box01 h1 {
   font-size: 50px;
 }
 body main .text .box01 p {
-  margin: 10px 0;
+  margin: 20px 0;
   font-size: 19px;
+}
+body main .text .box02 {
+  margin: 5% 5%;
 }
 body main .text .box02 h3 {
   color: var(--Rose-800);
+}
+body main .text .box03 {
+  border-bottom: 1px solid var(--Stone-150);
+}
+body main .text .box03 ul {
+  margin-bottom: 30px;
+}
+body main .text .box04 {
+  border-bottom: 1px solid var(--Stone-150);
+}
+body main .text .box04 ol {
+  margin-bottom: 30px;
+}
+body main .text .box05 > p {
+  margin: 10px 0;
+}
+body main .text .box05 .nutrition p {
+  display: flex;
+  padding: 20px;
+  width: 100%;
+  border-bottom: 1px solid black;
+}
+body main .text .box05 .nutrition p span {
+  display: inline-block;
+  width: 100%;
+  justify-content: space-around;
+}
+body main .text .box05 .nutrition p:last-child {
+  border-bottom: none;
+}
+
+@media (max-width: 1100px) {
+  body {
+    width: 100%;
+    height: 100%;
+    background-color: var(--White);
+  }
+  body main {
+    margin: 0;
+    border-radius: 0px;
+    background-color: var(--White);
+  }
+  body main .img {
+    padding-top: 0px;
+    margin: 0px;
+  }
+  body main .img img {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 0px;
+  }
+  body main .text .box {
+    width: 100%;
+    margin: 30px 0;
+    padding: 0 3%;
+    font-size: 19px;
+  }
+  body main .text .box ul,
+  body main .text .box ol {
+    list-style-position: inside;
+    padding-top: 10px;
+    padding-left: 10px;
+  }
+  body main .text .box ul li,
+  body main .text .box ol li {
+    padding: 7px 0;
+  }
+  body main .text .box h2 {
+    color: var(--Brown-800);
+  }
+  body main .text .box span {
+    font-weight: bold;
+  }
+  body main .text .box01 h1 {
+    font-size: 50px;
+  }
+  body main .text .box01 p {
+    margin: 20px 0;
+    font-size: 19px;
+  }
+  body main .text .box02 {
+    margin: 5% 0;
+  }
+  body main .text .box02 h3 {
+    color: var(--Rose-800);
+  }
+  body main .text .box03 {
+    border-bottom: 1px solid black;
+  }
+  body main .text .box03 ul {
+    margin-bottom: 30px;
+  }
+  body main .text .box04 {
+    border-bottom: 1px solid black;
+  }
+  body main .text .box04 ol {
+    margin-bottom: 30px;
+  }
+  body main .text .box05 > p {
+    margin: 10px 0;
+  }
+  body main .text .box05 .nutrition p {
+    display: flex;
+    padding: 20px;
+    width: 100%;
+    border-bottom: 1px solid black;
+  }
+  body main .text .box05 .nutrition p span {
+    display: inline-block;
+    width: 100%;
+    justify-content: space-around;
+  }
+  body main .text .box05 .nutrition p:last-child {
+    border-bottom: none;
+  }
 }/*# sourceMappingURL=style.css.map */
