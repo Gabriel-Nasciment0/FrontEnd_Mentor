@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 :root {
   --White: hsl(0, 0%, 100%);
   --Stone-100: hsl(30, 54%, 90%);
@@ -5,6 +11,46 @@
   --Stone-600: hsl(30, 10%, 34%);
   --Stone-900: hsl(24, 5%, 18%);
   --Brown-800: hsl(14, 45%, 36%);
-  --Rose-800: hsl(332, 51%, 32%);
   --Rose-50: hsl(330, 100%, 98%);
+  --Rose-800: hsl(332, 51%, 32%);
+  --young-serif: "Young Serif", serif;
+  --outfit: "Outfit", sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-color: var(--Stone-100);
+}
+body main {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 10% 10%;
+  border-radius: 20px;
+  background-color: var(--White);
+}
+body main .img {
+  margin: 50px 0;
+}
+body main .img img {
+  width: 100%;
+  border-radius: 20px;
+}
+body main .text .box {
+  font-size: 19px;
+}
+body main .text .box ul,
+body main .text .box ol {
+  list-style-position: inside;
+}
+body main .text .box01 h1 {
+  font-size: 50px;
+}
+body main .text .box01 p {
+  margin: 10px 0;
+  font-size: 19px;
+}
+body main .text .box02 h3 {
+  color: var(--Rose-800);
 }/*# sourceMappingURL=style.css.map */
