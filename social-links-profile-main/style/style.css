@@ -1,1 +1,42 @@
-/*# sourceMappingURL=style.css.map */
+:root {
+  --Green: hsl(75, 94%, 57%);
+  --White: hsl(0, 0%, 100%);
+  --Grey-700: hsl(0, 0%, 20%);
+  --Grey-800: hsl(0, 0%, 12%);
+  --Grey-900: hsl(0, 0%, 8%);
+  --font: "Inter", sans-serif;
+}
+
+body {
+  background: var(--Grey-900);
+}
+body main {
+  background: var(--Grey-800);
+  margin: 150px auto;
+  padding: 2%;
+  width: 300px;
+  border-radius: 20px;
+  text-align: center;
+  font-family: var(--font);
+  color: var(--White);
+}
+body main .card .perfil img {
+  border-radius: 50%;
+  width: 100px;
+}
+body main .card .perfil p {
+  color: var(--Green);
+}
+body main .card .perfil p:last-child {
+  color: var(--White);
+  padding-top: 10px;
+}
+body main .card .social p {
+  background: var(--Grey-700);
+  padding: 4% 0;
+  border-radius: 10px;
+}
+body main .card .social p a {
+  color: var(--White);
+  text-decoration: none;
+}/*# sourceMappingURL=style.css.map */
