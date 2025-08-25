@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Figtree", sans-serif;
+}
+:root {
+    --Yellow: hsl(47, 88%, 63%);
+
+    --White: hsl(0, 0%, 100%);
+
+    --Gray-500: hsl(0, 0%, 42%);
+    --Gray-950: hsl(0, 0%, 7%);
+}
+
+body {
+    background: var(--Yellow);
+
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: var(--Yellow);
+        .container {
+            background: var(--White);
+            width: 400px;
+            padding: 27px;
+            border-radius: 20px;
+            border: 1px solid black;
+            box-shadow: 10px 10px 2px black;
+            .image {
+                img {
+                    width: 100%;
+                    border-radius: 20px;
+                }
+            } //image
+            .text {
+                h1 {
+                    width: 110px;
+                    text-align: center;
+                    font-size: 19px;
+                    padding: 1.5%;
+                    margin: 15px 0;
+                    border-radius: 6px;
+                    background: var(--Yellow);
+                }
+                h2 {
+                    font-size: 25px;
+                }
+                h2:hover {
+                    color: var(--Yellow);
+                    cursor: pointer;
+                }
+                p {
+                    font-size: 16px;
+                    margin: 15px 0;
+                    line-height: 25px;
+                }
+                .perfil {
+                    display: flex;
+                    padding-top: 4%;
+                    img {
+                        padding-right: 15px;
+                        width: 60px;
+                        height: 50px;
+                    }
+                    p {
+                        font-weight: bolder;
+                    }
+                } //perfil
+            } //text
+        } //container
+    } //main
+} //body
+
+.attribution {
+    position: absolute;
+    bottom: 0;
+    left: 45%;
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}

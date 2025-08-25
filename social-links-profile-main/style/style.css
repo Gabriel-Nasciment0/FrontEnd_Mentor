@@ -39,4 +39,10 @@ body main .card .social p {
 body main .card .social p a {
   color: var(--White);
   text-decoration: none;
+}
+body main .card .social p:hover {
+  background: var(--Green);
+}
+body main .card .social p:hover a {
+  color: var(--Grey-900);
 }/*# sourceMappingURL=style.css.map */

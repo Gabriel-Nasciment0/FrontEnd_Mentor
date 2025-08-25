@@ -49,6 +49,12 @@ body {
                         text-decoration: none;
                     }
                 }
+                p:hover {
+                    background: var(--Green);
+                    a {
+                        color: var(--Grey-900);
+                    }
+                }
             } //social
         } //card
     } //main
