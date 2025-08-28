@@ -12,7 +12,68 @@
   --Purple-950: hsl(292, 42%, 14%);
 }
 
-.attribution {
+body {
+  background: var(--Purple-100);
+}
+body .background {
+  position: absolute;
+  z-index: -9999;
+  width: 100%;
+  height: 300px;
+  background: url(../assets/images/background-pattern-desktop.svg) no-repeat;
+  background-size: cover;
+}
+body main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+body main .container {
+  width: 80%;
+  max-width: 500px;
+  background: var(--White);
+  padding: 0 2%;
+  border-radius: 15px;
+}
+body main .container .faq {
+  display: flex;
+  padding: 20px 0;
+}
+body main .container .faq img {
+  padding-right: 30px;
+}
+body main .container .faq h1 {
+  font-size: 40px;
+  color: var(--Purple-950);
+}
+body main .container .box {
+  border-bottom: 1px solid var(--Purple-100);
+  padding: 10px 0;
+}
+body main .container .box .question {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+body main .container .box .question h2 {
+  flex: 1 1 auto;
+  font-size: 20px;
+}
+body main .container .box .question button {
+  background: none;
+  border: none;
+  width: 50px;
+}
+body main .container .box .answer {
+  font-size: 16px;
+  color: var(--Purple-950);
+  line-height: 25px;
+}
+body main .container .box .answer p {
+  display: none;
+}
+body .attribution {
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -20,7 +81,6 @@
   font-size: 11px;
   text-align: center;
 }
-
-.attribution a {
+body .attribution a {
   color: hsl(228, 45%, 44%);
 }/*# sourceMappingURL=style.css.map */
