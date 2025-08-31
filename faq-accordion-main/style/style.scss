@@ -57,21 +57,28 @@ body {
                     h2 {
                         flex: 1 1 auto;
                         font-size: 20px;
+                        cursor: pointer;
+                    }
+                    h2:hover {
+                        color: var(--Purple-600);
                     }
                     button {
+                        cursor: pointer;
                         background: none;
                         border: none;
-                        width: 50px;
+                        margin-left: 50px;
                     }
                 } //question
                 .answer {
                     font-size: 16px;
                     color: var(--Purple-950);
                     line-height: 25px;
-                    p {
-                        display: none;
-                    }
+                    display: none;
                 } //answer
+
+                .open {
+                    display: block;
+                }
             } //box
         } //container
     } //main

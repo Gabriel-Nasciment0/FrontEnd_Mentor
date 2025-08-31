@@ -59,19 +59,25 @@ body main .container .box .question {
 body main .container .box .question h2 {
   flex: 1 1 auto;
   font-size: 20px;
+  cursor: pointer;
+}
+body main .container .box .question h2:hover {
+  color: var(--Purple-600);
 }
 body main .container .box .question button {
+  cursor: pointer;
   background: none;
   border: none;
-  width: 50px;
+  margin-left: 50px;
 }
 body main .container .box .answer {
   font-size: 16px;
   color: var(--Purple-950);
   line-height: 25px;
-}
-body main .container .box .answer p {
   display: none;
+}
+body main .container .box .open {
+  display: block;
 }
 body .attribution {
   position: absolute;
