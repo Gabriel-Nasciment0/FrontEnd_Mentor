@@ -1,0 +1,220 @@
+:root {
+  --Light-red: hsl(0, 100%, 67%);
+  --Orangey-yellow: hsl(39, 100%, 56%);
+  --Green-teal: hsl(166, 100%, 37%);
+  --Cobalt-blue: hsl(234, 85%, 45%);
+  --Light-slate-blue: hsl(252, 100%, 67%);
+  --Light-royal-blue: hsl(241, 81%, 54%);
+  --Violet-blue: hsla(256, 72%, 46%, 1);
+  --Persian-blue: hsla(241, 72%, 46%, 0);
+  --White: hsl(0, 0%, 100%);
+  --Pale-blue: hsl(221, 100%, 96%);
+  --Light-lavender: hsl(241, 100%, 89%);
+  --Dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+.clear {
+  clear: both;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: var(--Pale-blue);
+}
+main .container {
+  background: var(--White);
+  width: 100%;
+}
+main .container .result {
+  background: var(--Violet-blue);
+  text-align: center;
+  color: var(--White);
+  border-radius: 0 0 20px 20px;
+}
+main .container .result h1:first-child {
+  color: var(--Light-lavender);
+  font-size: 16px;
+  padding-top: 20px;
+  margin: 0;
+}
+main .container .result .points {
+  margin: 20px auto;
+  background: linear-gradient(to bottom, var(--Light-royal-blue), var(--Violet-blue));
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+main .container .result .points > p:first-child {
+  font-weight: bolder;
+  font-size: 40px;
+  padding-top: 10px;
+}
+main .container .result .points > p:last-child {
+  font-size: 15px;
+  color: var(--Light-lavender);
+}
+main .container .result h1 {
+  margin: 10px 0;
+}
+main .container .result > p:last-child {
+  padding: 25px 50px;
+}
+main .container .summary {
+  padding: 0 5%;
+}
+main .container .summary h1 {
+  font-size: 19px;
+  padding: 10px 0;
+}
+main .container .summary .summaryBox {
+  display: flex;
+  padding: 4%;
+  margin: 15px 0;
+  border-radius: 10px;
+  justify-content: space-between;
+}
+main .container .summary .summaryBox .icon {
+  display: flex;
+}
+main .container .summary .summaryBox .icon img {
+  margin-right: 10px;
+}
+main .container .summary .summaryBox p:last-child {
+  color: black;
+}
+main .container .summary .summaryBox p:last-child span {
+  color: var(--Light-lavender);
+}
+main .container .summary .reaction {
+  background: hsla(0, 100%, 67%, 0.1);
+}
+main .container .summary .reaction .icon p {
+  color: var(--Light-red);
+}
+main .container .summary .memory {
+  background: hsla(39, 100%, 56%, 0.1);
+}
+main .container .summary .memory .icon p {
+  color: var(--Orangey-yellow);
+}
+main .container .summary .verbal {
+  background: hsla(166, 100%, 37%, 0.1);
+}
+main .container .summary .verbal .icon p {
+  color: var(--Green-teal);
+}
+main .container .summary .visual {
+  background: hsla(234, 85%, 45%, 0.1);
+}
+main .container .summary .visual .icon p {
+  color: var(--Cobalt-blue);
+}
+main .container .summary button {
+  width: 100%;
+  padding: 4%;
+  margin: 10px 0 30px 0;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  color: var(--White);
+  background: var(--Dark-gray-blue);
+  border-radius: 20px;
+}
+main .container .summary button:hover {
+  background: var(--Violet-blue);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 900px) {
+  body {
+    overflow: hidden;
+  }
+  body main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: var(--Pale-blue);
+  }
+  body main .container {
+    background: var(--White);
+    width: 800px;
+    border-radius: 20px;
+  }
+  body main .container .result {
+    width: 50%;
+    height: 500px;
+    float: left;
+    background: var(--Violet-blue);
+    text-align: center;
+    color: var(--White);
+    border-radius: 20px;
+  }
+  body main .container .result h1:first-child {
+    color: var(--Light-lavender);
+    font-size: 20px;
+    padding-top: 30px;
+    margin: 0;
+  }
+  body main .container .result .points {
+    margin: 30px auto;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+  }
+  body main .container .result .points > p:first-child {
+    font-weight: bolder;
+    font-size: 60px;
+    padding-top: 20px;
+  }
+  body main .container .result .points > p:last-child {
+    font-size: 15px;
+    color: var(--Light-lavender);
+  }
+  body main .container .result h1 {
+    margin: 10px 0;
+  }
+  body main .container .result > p:last-child {
+    padding: 25px 50px;
+  }
+  body main .container .summary {
+    float: left;
+    width: 50%;
+    height: 500px;
+    padding: 3%;
+  }
+  body main .container .summary h1 {
+    font-size: 19px;
+    padding: 20px 0;
+  }
+  body main .container .summary button {
+    width: 100%;
+    padding: 4%;
+    margin: 20px 0 30px 0;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: var(--White);
+    background: var(--Dark-gray-blue);
+    border-radius: 20px;
+  }
+}/*# sourceMappingURL=style.css.map */
