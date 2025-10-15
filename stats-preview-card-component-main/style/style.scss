@@ -11,7 +11,7 @@
     box-sizing: border-box;
 }
 
-::root {
+:root {
     // Font
     --Inter: "Inter", sans-serif;
     --Lexend-Deca: "Lexend Deca", sans-serif;
@@ -27,3 +27,73 @@
     --White-main-paragraph: hsla(0, 0%, 100%, 0.75);
     --White-stat-headings: hsla(0, 0%, 100%, 0.6);
 }
+body {
+    width: 100%;
+    height: 100%;
+    background: var(--Navy-950-main-background);
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        color: var(--White-main-heading-stats);
+        .container {
+            width: 300px;
+            background: var(--Blue-950-card-background);
+            border-radius: 15px;
+            .img {
+                width: 100%;
+                height: 200px;
+                border-radius: 15px 15px 0 0;
+                .zIndex {
+                    width: 100%;
+                    height: 100%;
+                    background: hsla(277, 64%, 61%, 0.6);
+                    border-radius: 15px 15px 0 0;
+                } //zIndex
+            } //img
+            .mobile {
+                background: url(../images/image-header-mobile.jpg) no-repeat
+                    center;
+                background-size: cover;
+            } //mobile
+            .text {
+                text-align: center;
+                padding: 0 7%;
+                &__title {
+                    font-family: var(--Inter);
+                    padding: 20px 0;
+                    font-size: 25px;
+                    font-weight: bolder;
+                    span {
+                        color: var(--Purple-500-accent);
+                    } //span
+                } //title
+                &__paragraph {
+                    font-size: 14px;
+                    line-height: 25px;
+                    font-family: var(--Inter);
+                    color: var(--White-main-paragraph);
+                } //paragraph
+                &__insights {
+                    padding: 20px 0;
+                    .insights {
+                        &__companies,
+                        &__templates,
+                        &__queries {
+                            padding: 20px 0;
+                            &-number {
+                                font-size: 20px;
+                                font-weight: bolder;
+                            }
+                            &-text {
+                                font-size: 15px;
+                                color: var(--White-stat-headings);
+                            }
+                        }
+                    }
+                } //insights
+            } //text
+        } //container
+    } //main
+} //body

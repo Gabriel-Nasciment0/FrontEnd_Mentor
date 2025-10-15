@@ -1,1 +1,63 @@
-/*# sourceMappingURL=media-screen.css.map */
+@media screen and (min-width: 1100px) {
+  body {
+    width: 100%;
+    height: 100%;
+  }
+  body main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  body main .container {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 1200px;
+    height: 500px;
+    border-radius: 15px;
+  }
+  body main .container .img {
+    width: 50%;
+    height: 500px;
+    border-radius: 0 15px 15px 0;
+  }
+  body main .container .img .zIndex {
+    width: 100%;
+    height: 100%;
+    border-radius: 0 15px 15px 0;
+  }
+  body main .container .mobile {
+    background: url(../images/image-header-desktop.jpg) no-repeat center;
+    background-size: cover;
+  }
+  body main .container .text {
+    width: 50%;
+    text-align: left;
+    padding: 5% 7%;
+  }
+  body main .container .text__title {
+    font-family: var(--Inter);
+    padding: 30px 0;
+    font-size: 30px;
+    font-weight: bolder;
+  }
+  body main .container .text__paragraph {
+    font-size: 17px;
+    line-height: 25px;
+  }
+  body main .container .text__insights {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+  }
+  body main .container .text__insights .insights__companies, body main .container .text__insights .insights__templates, body main .container .text__insights .insights__queries {
+    padding: 80px 0;
+  }
+  body main .container .text__insights .insights__companies-number, body main .container .text__insights .insights__templates-number, body main .container .text__insights .insights__queries-number {
+    font-size: 25px;
+    font-weight: bolder;
+  }
+  body main .container .text__insights .insights__companies-text, body main .container .text__insights .insights__templates-text, body main .container .text__insights .insights__queries-text {
+    font-size: 18px;
+  }
+}/*# sourceMappingURL=media-screen.css.map */
