@@ -1,0 +1,85 @@
+@media screen and (min-width: 1000px) {
+  body main {
+    display: block;
+    justify-content: center;
+    align-items: center;
+  }
+  body main .container {
+    width: 700px;
+    height: 500px;
+    margin: 200px auto;
+    background: var(--White);
+    border-radius: 10px;
+  }
+  body main .container .img {
+    float: left;
+    width: 50%;
+    height: 100%;
+    border-radius: 10px 0 0 10px;
+  }
+  body main .container .desktop {
+    background: url(../images/image-product-desktop.jpg) no-repeat center center;
+    background-size: cover;
+  }
+  body main .container .text {
+    float: left;
+    width: 100%;
+    width: 50%;
+    padding: 0 5%;
+  }
+  body main .container .text h1 {
+    font-size: 19px;
+    padding: 25px 0;
+    font-weight: normal;
+    font-family: var(--montserrat);
+  }
+  body main .container .text h2 {
+    font-size: 29px;
+    font-weight: bolder;
+    font-family: var(--fraunces);
+    padding-bottom: 35px;
+  }
+  body main .container .text p {
+    font-size: 20px;
+    padding-bottom: 40px;
+    line-height: 26px;
+  }
+  body main .container .text .price {
+    display: flex;
+    font-family: var(--fraunces);
+  }
+  body main .container .text .price .disconted {
+    font-size: 32px;
+    font-weight: bolder;
+    color: var(--Green-500);
+  }
+  body main .container .text .price .valor {
+    margin-top: 1px;
+    padding-left: 20px;
+    font-size: 15px;
+    text-decoration: line-through;
+  }
+  body main .container .text button {
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    background: var(--Green-500);
+    color: var(--White);
+  }
+  body main .container .text button span::before {
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-image: url("../images/icon-cart.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-right: 10px;
+  }
+  body main .container .text button:hover {
+    background: var(--Green-700);
+    cursor: pointer;
+  }
+}/*# sourceMappingURL=media-screen.css.map */
