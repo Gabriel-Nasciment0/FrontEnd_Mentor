@@ -1,0 +1,72 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+:root {
+  --Lexend-Deca: "Lexend Deca", sans-serif;
+  --Big-Shoulders: "Big Shoulders", sans-serif;
+  --Gold-500: hsl(31, 77%, 52%);
+  --Cyan-800: hsl(184, 100%, 22%);
+  --Green-950: hsl(179, 100%, 13%);
+  --Transparent-white-paragraphs: hsla(0, 0%, 100%, 0.75);
+  --Gray-100-background-headings-buttons: hsl(0, 0%, 95%);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+main .container {
+  width: 300px;
+}
+main .container .main__sedans, main .container .main__suv, main .container .main__luxury {
+  padding: 20px 10%;
+}
+main .container .main__sedans-img, main .container .main__suv-img, main .container .main__luxury-img {
+  background-size: contain;
+  width: 30%;
+  height: 50px;
+}
+main .container .main__sedans-text h1, main .container .main__suv-text h1, main .container .main__luxury-text h1 {
+  font-family: var(--Big-Shoulders);
+  font-weight: normal;
+  color: white;
+  font-size: 30px;
+}
+main .container .main__sedans-text p, main .container .main__suv-text p, main .container .main__luxury-text p {
+  color: var(--Transparent-white-paragraphs);
+  padding: 10px 0;
+  font-size: 15px;
+  line-height: 25px;
+}
+main .container .main__sedans-text button, main .container .main__suv-text button, main .container .main__luxury-text button {
+  width: 60%;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+}
+main .container .main__sedans {
+  background-color: var(--Gold-500);
+}
+main .container .main__sedans-img {
+  background: url(../images/icon-sedans.svg) no-repeat center;
+}
+main .container .main__suv {
+  background: var(--Cyan-800);
+}
+main .container .main__suv-img {
+  background: url(../images/icon-suvs.svg) no-repeat center;
+}
+main .container .main__luxury {
+  background: var(--Green-950);
+}
+main .container .main__luxury-img {
+  background: url(../images/icon-luxury.svg) no-repeat center;
+}/*# sourceMappingURL=style.css.map */

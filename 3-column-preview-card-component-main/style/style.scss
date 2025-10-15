@@ -1,0 +1,81 @@
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+:root {
+    //Font
+    --Lexend-Deca: "Lexend Deca", sans-serif;
+    --Big-Shoulders: "Big Shoulders", sans-serif;
+    /// Primary
+
+    --Gold-500: hsl(31, 77%, 52%);
+    --Cyan-800: hsl(184, 100%, 22%);
+    --Green-950: hsl(179, 100%, 13%);
+
+    // Neutral
+
+    --Transparent-white-paragraphs: hsla(0, 0%, 100%, 0.75);
+    --Gray-100-background-headings-buttons: hsl(0, 0%, 95%);
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    .container {
+        width: 300px;
+        .main {
+            &__sedans,
+            &__suv,
+            &__luxury {
+                padding: 20px 10%;
+                &-img {
+                    background-size: contain;
+                    width: 30%;
+                    height: 50px;
+                }
+                &-text {
+                    h1 {
+                        font-family: var(--Big-Shoulders);
+                        font-weight: normal;
+                        color: white;
+                        font-size: 30px;
+                    }
+                    p {
+                        color: var(--Transparent-white-paragraphs);
+                        padding: 10px 0;
+                        font-size: 15px;
+                        line-height: 25px;
+                    }
+                    button {
+                        width: 60%;
+                        padding: 10px;
+                        border-radius: 20px;
+                        border: none;
+                    }
+                } //text
+            }
+            &__sedans {
+                &-img {
+                    background: url(../images/icon-sedans.svg) no-repeat center;
+                } //img
+                background-color: var(--Gold-500);
+            } //sedans
+            &__suv {
+                &-img {
+                    background: url(../images/icon-suvs.svg) no-repeat center;
+                } //img
+                background: var(--Cyan-800);
+            } //suv
+            &__luxury {
+                &-img {
+                    background: url(../images/icon-luxury.svg) no-repeat center;
+                } //img
+                background: var(--Green-950);
+            } //luxury
+        } //main
+    } //container
+} //main
