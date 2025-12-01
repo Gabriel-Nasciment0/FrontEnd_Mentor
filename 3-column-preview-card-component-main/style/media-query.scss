@@ -1,0 +1,45 @@
+@media screen and (min-width: 800px) {
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        .container {
+            display: flex;
+            width: 900px;
+            .main {
+                &__sedans,
+                &__suv,
+                &__luxury {
+                    padding: 10px 10%;
+                    &-img {
+                        background-size: contain;
+                        width: 50%;
+                        height: 60px;
+                    }
+                    &-text {
+                        h1 {
+                            font-family: var(--Big-Shoulders);
+                            font-weight: normal;
+                            color: white;
+                            font-size: 50px;
+                        }
+                        p {
+                            color: var(--Transparent-white-paragraphs);
+                            padding: 15px 0;
+                    
+                            font-size: 18px;
+                            line-height: 25px;
+                        }
+                        button {
+                            width: 90%;
+                            padding: 10px;
+                            border-radius: 20px;
+                            border: none;
+                        }
+                    } //text
+                }
+            } //main
+        } //container
+    } //main
+}
