@@ -27,13 +27,14 @@
                         p {
                             color: var(--Transparent-white-paragraphs);
                             padding: 15px 0;
-                    
+                            height: 250px;
                             font-size: 18px;
                             line-height: 25px;
                         }
                         button {
                             width: 90%;
                             padding: 10px;
+                            margin: 2rem 0;
                             border-radius: 20px;
                             border: none;
                         }
