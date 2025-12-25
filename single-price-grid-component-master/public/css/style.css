@@ -11884,6 +11884,7 @@ main .row {
 }
 main .row .join {
   background: white;
+  padding: 2rem;
 }
 main .row .join h1, main .row .join .h1 {
   font-size: 1.5rem;
@@ -11898,6 +11899,7 @@ main .row .join p {
 }
 main .row .monthly {
   background: var(--Teal-500);
+  padding: 2rem;
 }
 main .row .monthly h1, main .row .monthly .h1 {
   font-size: 1.5rem;
@@ -11915,6 +11917,14 @@ main .row .monthly button {
 }
 main .row .whyUs {
   background: var(--Teal-500);
+  padding: 2rem;
+}
+main .row .whyUs h1, main .row .whyUs .h1 {
+  font-size: 1.5rem;
+}
+main .row .whyUs p {
+  font-size: 1rem;
+  color: var(--Teal-100);
 }
 
 /*# sourceMappingURL=style.css.map */
