@@ -1,0 +1,29 @@
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght,YOPQ@100..900,300&display=swap");
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+:root {
+    //Colors
+
+    //Primary
+
+    --Blue-600: hsl(185, 75%, 39%);
+    --Navy-950: hsl(229, 23%, 23%);
+    --Gray-500: hsl(227, 10%, 46%);
+
+    //Neutral
+
+    --Gray-100: hsl(225, 10%, 92%);
+    //Fonts
+    --Kumbh-Sans: "Kumbh Sans", sans-serif;
+}
+
+.card {
+    width: 18rem;
+}
